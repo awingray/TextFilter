@@ -4,6 +4,7 @@ const string testString = "hello:  , how are   you doing?\n THIS IS A TEST/ stri
 
 string GetWordFromText(string text)
 {
+    // I think this is possible using linq
     var word = new StringBuilder();
     foreach (var  c in text)
     {
@@ -11,13 +12,6 @@ string GetWordFromText(string text)
         word.Append(c);
     }
     return word.ToString();
-}
-
-string[] TextIterator(string text) => testString.Split(' ', '?', ',', '\'', ';'); // This is hideous but it will do for now
-
-foreach (var c in TextIterator(testString))
-{
-    Console.WriteLine(GetWordFromText(c));
 }
 
 
