@@ -1,6 +1,13 @@
 ﻿using System.Text;
+using TextFilter;
+using TextFilter.Filters;
 
 const string testString = "hello:  , how are   you doing?\n THIS IS A TEST/ string (). Lorem?'IPSUM";
+
+var wordSpec = new WordSpec().AddSpec(new NoLetterT());
+var tokenizedString = new Tokenizer().Tokenize(testString);
+
+
 
 string GetWordFromText(string text)
 {
