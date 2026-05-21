@@ -2,13 +2,7 @@ using TextFilter.Filters;
 
 namespace TextFilter;
 
-// Most likely don't need an interface here, but i will just do it for demonstration
-internal interface IWordSpec 
-{
-    bool All(string word);
-}
-
-internal sealed class WordSpec : IWordSpec
+internal sealed class WordSpec : ISpec
 {
     private readonly ICollection<ISpec> _specs = [];
 
@@ -18,5 +12,5 @@ internal sealed class WordSpec : IWordSpec
         return this;
     }
 
-    public bool All(string word) => _specs.All(spec => spec.IsSatisfiedBy(word));
+    public bool IsSatisfiedBy(string word) => _specs.All(spec => spec.IsSatisfiedBy(word));
 }
