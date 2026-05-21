@@ -1,7 +1,7 @@
 ﻿using TextFilter;
 using TextFilter.Filters;
 
-const string testString = "hello:  , how are   you doing?\n THIS IS A TEST/ string (). Lorem?'IPSUM";
+var testString = await File.ReadAllTextAsync("input.txt");
 
 var wordSpec = new WordSpec()
     .AddSpec(new NoLetterT())
