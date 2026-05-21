@@ -15,7 +15,7 @@ public class NoLetterTTests
     [TestCase("hello")]
     [TestCase("HORSE")]
     [TestCase("car")]
-    public void ShouldReturnTrue_DoesNotContainT(string testString)
+    public void ShouldSatisfy_DoesNotContainT(string testString)
     {
         var result = _spec.IsSatisfiedBy(testString);
         
@@ -27,7 +27,7 @@ public class NoLetterTTests
     [TestCase("tattoo")]
     [TestCase("TTT")]
     [TestCase("haT")]
-    public void ShouldReturnFalse_ContainsT(string testString)
+    public void ShouldNotSatisfy_ContainsT(string testString)
     {
         var result = _spec.IsSatisfiedBy(testString);
         
