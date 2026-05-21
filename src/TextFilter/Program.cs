@@ -5,7 +5,8 @@ const string testString = "hello:  , how are   you doing?\n THIS IS A TEST/ stri
 
 var wordSpec = new WordSpec()
     .AddSpec(new NoLetterT())
-    .AddSpec(new MinLength(3));
+    .AddSpec(new MinLength(3))
+    .AddSpec(new NoMiddleVowel());
 var textFilter = new TextFilter.TextFilter(new Tokenizer(), wordSpec);
 
 Console.WriteLine(textFilter.Filter(testString));

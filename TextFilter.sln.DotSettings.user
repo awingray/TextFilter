@@ -5,5 +5,7 @@
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::197F7593-BDFB-4E80-A2EF-7A52BD797249::net10.0::TextFilter.Tests.Filters.MinLengthTests.ShouldSatisfy_MinLength3&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::197F7593-BDFB-4E80-A2EF-7A52BD797249::net10.0::TextFilter.Tests.Filters.MinLengthTests.ShouldNotSatisfy_MinLength3&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::197F7593-BDFB-4E80-A2EF-7A52BD797249::net10.0::TextFilter.Tests.Filters.NoMiddleVowelTests.ShouldSatisfy_WhenMiddleHasNoVowel&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::197F7593-BDFB-4E80-A2EF-7A52BD797249::net10.0::TextFilter.Tests.Filters.NoMiddleVowelTests.ShouldNotSatisfy_WhenMiddleHasVowel&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
